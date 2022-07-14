@@ -4,27 +4,23 @@
   <remote name="terminatorj" fetch="https://github.com/Terminator-J/" />
   <remote name="tjgitlab" fetch="https://gitlab.com/Terminator-J/" />
   <remote name="lineage" fetch="https://github.com/LineageOS/" />
-  <remote name="muppets" fetch="https://github.com/TheMuppets/" />
   <remote name="gitlab" fetch="https://gitlab.com/" />
-  <remote name="aosip" fetch="https://github.com/" />
   <remote name="abhizala" fetch="https://github.com/" />
   <remote name="ezio84" fetch="https://github.com/" />
-  <remote name="syberia" fetch="https://github.com/" />
-  <remote name="luk1337" fetch="https://github.com/" />
-  <remote name="evox" fetch="https://github.com/" />
-  <remote name="mcdachpappe" fetch="https://github.com/" />
-<!-- Lineage HAL removes -->
-  <remove-project name="LineageOS/android_hardware_qcom_audio" groups="pdk-qcom,qcom,qcom_audio" revision="lineage-18.1-caf-sdm845" />
-  <remove-project name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-18.1-caf-sdm845" />
-  <remove-project name="LineageOS/android_hardware_qcom_media" groups="pdk-qcom,qcom,qcom_media" revision="lineage-18.1-caf-sdm845" />
-<!-- updated HAL additions -->
-  <project path="hardware/qcom-caf/sdm845/audio" name="crdroid_hardware_qcom_audio" remote="terminatorj" revision="11.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sdm845/display" name="crdroid_hardware_qcom_display" remote="terminatorj" revision="11.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sdm845/media" name="crdroid_hardware_qcom_media" remote="terminatorj" revision="11.0-caf-sdm845" />
-<!-- mcd clang
-  <project path="prebuilts/clang/host/linux-x86/clang-mcd" name="mcdachpappe/mcd-clang" remote="mcd" revision="v13" />
+  <remote name="luk" fetch="https://github.com/luk1337/" />
+  <remote name="evox" fetch="https://github.com/Evolution-X-Devices/" />
+  <remote name="mcdachpappe" fetch="https://github.com/mcdachpappe/" />
+<!-- removes
+  <remove-project name="LineageOS/android_hardware_qcom_audio" groups="pdk-qcom,qcom,qcom_audio" revision="lineage-19.1-caf-sdm845" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-19.1-caf-sdm845" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" groups="pdk-qcom,qcom,qcom_media" revision="lineage-19.1-caf-sdm845" />
 -->
-<!-- other
+<!-- unmerged stuffs
+  <project path="hardware/qcom-caf/sdm845/audio" name="Terminator-J/crdroid_hardware_qcom_audio" remote="terminatorj" revision="12.1-caf-sdm845-test" />
+  <project path="hardware/qcom-caf/sdm845/display" name="Terminator-J/crdroid_hardware_qcom_display" remote="terminatorj" revision="12.1-caf-sdm845-test" />
+  <project path="hardware/qcom-caf/sdm845/media" name="Terminator-J/crdroid_hardware_qcom_media" remote="terminatorj" revision="12.1-caf-sdm845-test" />
+-->
+<!--
   <project name="crdroidandroid/android_device_oneplus_common" path="device/oneplus/common" remote="crdroid" revision="11.0" />
   <project name="Terminator-J/crdroid_packages_apps_DeviceExtras" path="packages/apps/DeviceExtras" remote="terminatorj" revision="11.0-test" />
   <project path="prebuilts/clang/host/linux-x86/clang-6875598" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6875598" remote="crdroid" clone-depth="1" revision="10.0" />
